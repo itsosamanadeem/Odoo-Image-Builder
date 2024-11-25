@@ -9,7 +9,7 @@ import os
 class DownloadOdooSetup:
     async def downloadOdoo(self, i, time):
         browser = None
-        download_dir = f"/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/{i}"
+        download_dir = f"~/Odoo-Image-Builder/{i}"
         if not os.path.exists(download_dir):
             os.makedirs(download_dir)
         

@@ -3,7 +3,7 @@ import re
 
 class AdjustingDockerFileForEnterprise:
     async def formatDockerfile(self, dir):
-        dockerDir = f'/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/{dir}'
+        dockerDir = f'~/Odoo-Image-Builder/{dir}'
 
         if os.path.exists(dockerDir) and os.listdir(dockerDir):
             with open(f'{dockerDir}/Dockerfile', 'r', encoding='utf-8') as file:

@@ -11,7 +11,7 @@ from odooAutomation import AdjustDockerfile
 
 class OdooImage:
     def __init__(self):
-        self.dir = "/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/"
+        self.dir = "~/Odoo-Image-Builder/"
         self.client = docker.from_env()
     
     # async def dockerBuild(self):
