@@ -10,7 +10,7 @@ class OdooDockerClone:
     async def cloneOdoo(self, dir):    
         if os.path.exists(self.localDir) and os.listdir(self.localDir):
             print('Folder exists and already cloned')
-            shutil.move(f'{self.localDir}/{dir}.0', f"/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/{dir}")
+            shutil.move(f'{self.localDir}/{dir}.0/Dockerfile', f"/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/{dir}")
             shutil.move(f'{self.localDir}/{dir}.0/odoo.conf', f"/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/{dir}")
             shutil.move(f'{self.localDir}/{dir}.0/entrypoint.sh', f"/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/{dir}")
             shutil.move(f'{self.localDir}/{dir}.0/wait-for-psql.py', f"/home/osama/Desktop/ubuntu-machine-for-jenkins/Image Creation Automation/{dir}")
